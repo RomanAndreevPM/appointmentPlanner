@@ -41,11 +41,11 @@ export const AppointmentForm = (props) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type='text' value={title} onChange={handleTitleChange} />
+        <input type='text' value={title} onChange={handleTitleChange} placeholder="Add title"/>
         <input type='date' value={date} onChange={handleDateChange} min={getTodayString} />
         <input type='time' value={time} onChange={handleTimeChange} min={getTodayString} />
         <ContactPicker value={contact} contacts={contacts} contactChange={contactChange} />
-        <input type='submit' />
+        <input type='submit' value="Add appointment" />
       </form>
     </div>
   );

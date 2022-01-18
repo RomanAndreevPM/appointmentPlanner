@@ -26,10 +26,10 @@ export const ContactForm = (props) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type='text' value={name} onChange={handleNameChange} placeholder="Name"/>
-        <input type='phone' value={phone} onChange={handlePhoneChange}/>
-        <input type='email' value={email} onChange={handleEmailChange}/>
-        <input type='submit' />
+        <input type='text' value={name} onChange={handleNameChange} placeholder="Add name"/>
+        <input type='phone' value={phone} onChange={handlePhoneChange} placeholder="Add phone"/>
+        <input type='email' value={email} onChange={handleEmailChange} placeholder="Add email"/>
+        <input type='submit' value="Add contact"/>
       </form>
     </div>
   );
